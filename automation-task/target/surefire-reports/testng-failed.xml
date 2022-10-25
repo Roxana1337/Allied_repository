@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [CRA.TestNG.TestCRARegistrationPage]" verbose="0">
+  <test thread-count="1" name="Default XmlTest name c8dda1cf-4fe6-4315-979d-779566004343(failed)" verbose="0">
+    <classes>
+      <class name="CRA.TestNG.TestCRARegistrationPage">
+        <methods>
+          <include name="invalidPasswordTest" invocation-numbers="1 3"/>
+          <include name="firstPageLogin"/>
+        </methods>
+      </class> <!-- CRA.TestNG.TestCRARegistrationPage -->
+    </classes>
+  </test> <!-- Default XmlTest name c8dda1cf-4fe6-4315-979d-779566004343(failed) -->
+</suite> <!-- Failed suite [CRA.TestNG.TestCRARegistrationPage] -->

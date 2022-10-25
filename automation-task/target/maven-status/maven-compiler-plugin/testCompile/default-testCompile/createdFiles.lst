@@ -1,0 +1,14 @@
+CRA\cucumber\runners\validUserInvalidPassRunner.class
+CRA\cucumber\runners\validUserAndPassRunner.class
+CRA\cucumber\runners\sameUserRegistrationRunner.class
+CRA\cucumber\stepDefinitions\FirstPageLoginSD.class
+CRA\cucumber\runners\limitedVersionRunner.class
+CRA\cucumber\runners\invalidUserValidPassRunner.class
+CRA\cucumber\pom\HomePage.class
+CRA\cucumber\runners\CucumberReporting.class
+CRA\cucumber\pom\PropertyReader.class
+CRA\TestNG\TestCRARegistrationPage.class
+CRA\cucumber\pom\Main.class
+CRA\cucumber\pom\LimitedVersionPage.class
+CRA\cucumber\pom\CRARegistrationPage.class
+CRA\cucumber\pom\LoginCredentialsPage.class

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-19T17:28:53 EEST" name="CRA.TestNG.TestCRARegistrationPage" finished-at="2022-10-19T17:30:14 EEST" duration-ms="80125">
+    <groups>
+    </groups>
+    <test started-at="2022-10-19T17:28:53 EEST" name="Default XmlTest name c8dda1cf-4fe6-4315-979d-779566004343" finished-at="2022-10-19T17:30:14 EEST" duration-ms="80125">
+      <class name="CRA.TestNG.TestCRARegistrationPage">
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:28:54 EEST" name="firstPageLogin" finished-at="2022-10-19T17:28:57 EEST" duration-ms="3320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidPasswordTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:28:57 EEST" name="invalidPasswordTest" data-provider="InvalidPasswordDataProvider" finished-at="2022-10-19T17:29:00 EEST" duration-ms="3459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User181197]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:00 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:02 EEST" duration-ms="1729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidPasswordTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:02 EEST" name="invalidPasswordTest" data-provider="InvalidPasswordDataProvider" finished-at="2022-10-19T17:29:05 EEST" duration-ms="3443" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User181197]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9323c964968490637c91bae37e45c, findElement {using=xpath, value=//*[. = 'Registration failed!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RO_RPA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50859/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9323c964968490637c91bae37e45c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20a9323c964968490637c91bae37e45c, findElement {using=xpath, value=//*[. = 'Registration failed!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RO_RPA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50859}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50859/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 20a9323c964968490637c91bae37e45c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at CRA.cucumber.pom.CRARegistrationPage.registrationFailedDisplayed(CRARegistrationPage.java:48)
+at CRA.TestNG.TestCRARegistrationPage.invalidPasswordTest(TestCRARegistrationPage.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:05 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:07 EEST" duration-ms="1753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidPasswordTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:07 EEST" name="invalidPasswordTest" data-provider="InvalidPasswordDataProvider" finished-at="2022-10-19T17:29:11 EEST" duration-ms="3456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User181197]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PASSWORD1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:11 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:13 EEST" duration-ms="2029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidPasswordTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:13 EEST" name="invalidPasswordTest" data-provider="InvalidPasswordDataProvider" finished-at="2022-10-19T17:29:16 EEST" duration-ms="3452" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User181197]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a68d779bb2e1ebf0ae1b9d6ac814204f, findElement {using=xpath, value=//*[. = 'Registration failed!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RO_RPA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50901}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50901/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a68d779bb2e1ebf0ae1b9d6ac814204f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a68d779bb2e1ebf0ae1b9d6ac814204f, findElement {using=xpath, value=//*[. = 'Registration failed!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RO_RPA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50901}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50901/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a68d779bb2e1ebf0ae1b9d6ac814204f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at CRA.cucumber.pom.CRARegistrationPage.registrationFailedDisplayed(CRARegistrationPage.java:48)
+at CRA.TestNG.TestCRARegistrationPage.invalidPasswordTest(TestCRARegistrationPage.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:16 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:18 EEST" duration-ms="1757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidPasswordTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:18 EEST" name="invalidPasswordTest" data-provider="InvalidPasswordDataProvider" finished-at="2022-10-19T17:29:21 EEST" duration-ms="3470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User181197]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:21 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:23 EEST" duration-ms="2105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidPasswordTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:23 EEST" name="invalidPasswordTest" data-provider="InvalidPasswordDataProvider" finished-at="2022-10-19T17:29:27 EEST" duration-ms="3468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User181197]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pașșword1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:27 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:29 EEST" duration-ms="1827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidUsernameTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:29 EEST" name="invalidUsernameTest" data-provider="InvalidUsernameDataProvider" finished-at="2022-10-19T17:29:32 EEST" duration-ms="3463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Us0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:32 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:34 EEST" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidUsernameTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:34 EEST" name="invalidUsernameTest" data-provider="InvalidUsernameDataProvider" finished-at="2022-10-19T17:29:37 EEST" duration-ms="3490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user970]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:37 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:39 EEST" duration-ms="1740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidUsernameTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:39 EEST" name="invalidUsernameTest" data-provider="InvalidUsernameDataProvider" finished-at="2022-10-19T17:29:43 EEST" duration-ms="3464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USER970]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:43 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:44 EEST" duration-ms="1753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidUsernameTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:44 EEST" name="invalidUsernameTest" data-provider="InvalidUsernameDataProvider" finished-at="2022-10-19T17:29:48 EEST" duration-ms="3471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USERSVSDBD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:48 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:50 EEST" duration-ms="1726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidUsernameTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:50 EEST" name="invalidUsernameTest" data-provider="InvalidUsernameDataProvider" finished-at="2022-10-19T17:29:53 EEST" duration-ms="3442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:53 EEST" name="firstPageLogin" finished-at="2022-10-19T17:29:55 EEST" duration-ms="1698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="invalidUsernameTest(java.lang.String,java.lang.String)[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:55 EEST" name="invalidUsernameTest" data-provider="InvalidUsernameDataProvider" finished-at="2022-10-19T17:29:58 EEST" duration-ms="3443" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ușer9700]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:29:58 EEST" name="firstPageLogin" finished-at="2022-10-19T17:30:00 EEST" duration-ms="1702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="limitedVersionURL()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:30:00 EEST" name="limitedVersionURL" finished-at="2022-10-19T17:30:03 EEST" duration-ms="3424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- limitedVersionURL -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:30:03 EEST" name="firstPageLogin" finished-at="2022-10-19T17:30:05 EEST" duration-ms="1635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="sameUsernameAndPassword()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:30:05 EEST" name="sameUsernameAndPassword" finished-at="2022-10-19T17:30:08 EEST" duration-ms="3444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sameUsernameAndPassword -->
+        <test-method is-config="true" signature="firstPageLogin()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:30:08 EEST" name="firstPageLogin" finished-at="2022-10-19T17:30:10 EEST" duration-ms="1701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPageLogin -->
+        <test-method signature="validUserValidPassword()[pri:0, instance:CRA.TestNG.TestCRARegistrationPage@1dd92fe2]" started-at="2022-10-19T17:30:10 EEST" name="validUserValidPassword" finished-at="2022-10-19T17:30:14 EEST" duration-ms="3487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserValidPassword -->
+      </class> <!-- CRA.TestNG.TestCRARegistrationPage -->
+    </test> <!-- Default XmlTest name c8dda1cf-4fe6-4315-979d-779566004343 -->
+  </suite> <!-- CRA.TestNG.TestCRARegistrationPage -->
+</testng-results>
