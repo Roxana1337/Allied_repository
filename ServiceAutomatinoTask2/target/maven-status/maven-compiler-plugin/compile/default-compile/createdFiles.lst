@@ -1,0 +1,8 @@
+automation\core\PropertyReader.class
+automation\services\tests\TestNGTest.class
+automation\services\dto\BaseResponseDTO.class
+automation\services\dto\CurrencyNameResponseDTO.class
+automation\services\tests\RegistrationPageTests.class
+automation\services\core\BaseAction.class
+automation\core\ExcelDataProvider.class
+automation\services\actions\RegistrationActions.class
